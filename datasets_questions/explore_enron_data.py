@@ -24,7 +24,7 @@ enron_data_df = DataFrame(enron_data)
 enron_data_df.shape
 #(21, 146)
 
-# number of poi in the dataset. poi: people of interests
+# number of poi in the dataset? 18.  poi: people of interests. 
 enron=enron_data_df.T
 enron[enron.poi == True]
 # loop over dictionary
@@ -32,3 +32,9 @@ for key in enron_data:
     if enron_data[key]['poi'] == 1:
         count+=1
     print count
+
+#How Many POIs Exist? 35.
+path="/Users/megan/Documents/Udacity-ML-Nondegree/ud120-projects-master/final_project/poi_names.txt"
+poi_names = open(path, 'r')
+pio_names_full = poi_names.readlines()
+len(pio_names_full) - 2
