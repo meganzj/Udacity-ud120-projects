@@ -24,3 +24,6 @@ enron_data_df = DataFrame(enron_data)
 enron_data_df.shape
 #(21, 146)
 
+# number of poi in the dataset. poi: people of interests
+enron=enron_data_df.T
+enron[enron.poi == True]
