@@ -50,4 +50,7 @@ enron_data['LAY KENNETH L']['total_payments']
 
 len(enron[enron.email_address != 'NaN'])
 len(enron[enron.total_payments == 'NaN'])
-len(enron[enron.total_payments == 'NaN'])/len(enron.total_payments)
+float(len(enron[enron.total_payments == 'NaN'])/len(enron.total_payments))
+
+temp = enron[enron.poi==True]
+float(len(temp[temp.total_payments == 'NaN'])/len(enron[enron.poi==True]))
