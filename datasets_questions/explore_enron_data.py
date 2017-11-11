@@ -16,7 +16,11 @@
 """
 
 import pickle
+enron_data = pickle.load(open("/Users/megan/Documents/Udacity-ML-Nondegree/ud120-projects-master/final_project/final_project_dataset.pkl", "r"))
 
-enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
-
+from pandas import DataFrame
+enron_data_df = DataFrame(enron_data)
+# 21 is number of featuer, 146 is total data points
+enron_data_df.shape
+#(21, 146)
 
