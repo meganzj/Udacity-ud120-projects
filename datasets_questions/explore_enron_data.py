@@ -42,3 +42,4 @@ len(pio_names_full) - 2
 #some query
 enron_data['PRENTICE JAMES']['total_stock_value']
 enron_data['COLWELL WESLEY']['from_this_person_to_poi']
+enron_data['SKILLING JEFFREY K']['exercised_stock_options']
