@@ -47,3 +47,7 @@ enron_data['SKILLING JEFFREY K']['exercised_stock_options']
 enron_data['SKILLING JEFFREY K']['total_payments']
 enron_data['FASTOW ANDREW S']['total_payments']
 enron_data['LAY KENNETH L']['total_payments']
+
+len(enron[enron.email_address != 'NaN'])
+len(enron[enron.total_payments == 'NaN'])
+len(enron[enron.total_payments == 'NaN'])/len(enron.total_payments)
