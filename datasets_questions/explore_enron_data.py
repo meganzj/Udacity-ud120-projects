@@ -38,3 +38,6 @@ path="/Users/megan/Documents/Udacity-ML-Nondegree/ud120-projects-master/final_pr
 poi_names = open(path, 'r')
 pio_names_full = poi_names.readlines()
 len(pio_names_full) - 2
+
+#
+enron_data['PRENTICE JAMES']['total_stock_value']
