@@ -27,3 +27,8 @@ enron_data_df.shape
 # number of poi in the dataset. poi: people of interests
 enron=enron_data_df.T
 enron[enron.poi == True]
+# loop over dictionary
+for key in enron_data:
+    if enron_data[key]['poi'] == 1:
+        count+=1
+    print count
